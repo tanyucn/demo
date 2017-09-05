@@ -1,6 +1,7 @@
 class EventsController < ApplicationController
   def index
     @events = Event.all
+    @events = Event.page(params[:page]).per(5)
   end
 
   def new
@@ -18,6 +19,7 @@ class EventsController < ApplicationController
 
   def show
     @event = Event.find(params[:id])
+    @page_title = @event.name
   end
 
   def edit
