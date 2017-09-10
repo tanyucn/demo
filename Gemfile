@@ -37,6 +37,7 @@ gem 'jbuilder', '~> 2.5'
 gem "kaminari"
 gem 'bootstrap'
 gem 'simple_form'
+gem 'devise'
 
 
 
